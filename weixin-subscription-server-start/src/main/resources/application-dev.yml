@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+# 应用配置信息
+app:
+  config:
+    # 版本，方便通过接口版本升级
+    api-version: v1
+    # 访问频次限制
+    limit-count: 10
+
+# 微信公众号配置信息
+wx:
+  config:
+    # 微信公众号原始 ID，用于确定公众号身份
+    originalid: gh_0a0a0a0a0a0a0a0
+    # 微信公众号应用 ID，用于验证请求是否来自目标应用
+    appid: wx0000000000
+    # 微信公众号 Token
+    token: xxxxx
+    # 微信公众号消息加解密秘钥
+    aeskey: xxxx
+
+# 日志
+logging:
+  level:
+    root: info
+  config: classpath:logback-spring.xml
+  size_max: 500MB
+  days_max: 10

@@ -1,0 +1,5 @@
+spring:
+  config:
+    name: weixin-subscription-server
+  profiles:
+    active: dev
